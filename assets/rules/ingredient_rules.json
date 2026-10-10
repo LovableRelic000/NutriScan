@@ -1,0 +1,457 @@
+[
+  {
+    "id": "dairy.milk",
+    "triggers": ["dairy", "lactose", "vegan"],
+    "aliases": ["leche", "leche entera", "leche descremada", "leche deslactosada", "leche en polvo", "leche pasteurizada", "solidos de leche", "milk", "whole milk", "skim milk", "lowfat milk", "nonfat milk", "pasteurized milk", "cultured milk", "organic milk", "condensed milk", "evaporated milk", "milkfat", "milk fat", "dairy"],
+    "severity_by_trigger": { "dairy": "danger", "lactose": "danger", "vegan": "caution" },
+    "reason": "Contiene leche de origen animal / lactosa"
+  },
+  {
+    "id": "dairy.whey",
+    "triggers": ["dairy", "lactose", "vegan"],
+    "aliases": ["suero de leche", "suero lacteo", "proteina de suero", "solidos de suero", "whey", "whey protein", "whey powder", "sweet whey", "whey isolate"],
+    "severity_by_trigger": { "dairy": "danger", "lactose": "danger", "vegan": "caution" },
+    "reason": "Derivado lácteo obtenido del suero (contiene lactosa)"
+  },
+  {
+    "id": "dairy.casein",
+    "triggers": ["dairy", "lactose", "vegan"],
+    "aliases": ["caseina", "caseinato", "caseinato de sodio", "caseinato de calcio", "casein", "caseinate", "sodium caseinate"],
+    "severity_by_trigger": { "dairy": "danger", "lactose": "danger", "vegan": "caution" },
+    "reason": "Proteína principal de la leche"
+  },
+  {
+    "id": "dairy.lactose",
+    "triggers": ["dairy", "lactose", "vegan"],
+    "aliases": ["lactosa", "lactose", "milk sugar", "azucar de leche"],
+    "severity_by_trigger": { "dairy": "danger", "lactose": "danger", "vegan": "caution" },
+    "reason": "Azúcar natural de la leche (lactosa)"
+  },
+  {
+    "id": "dairy.butter",
+    "triggers": ["dairy", "lactose", "vegan"],
+    "aliases": ["mantequilla", "grasa butirica", "butter", "butter oil", "butterfat", "ghee", "clarified butter"],
+    "severity_by_trigger": { "dairy": "danger", "lactose": "danger", "vegan": "caution" },
+    "reason": "Grasa láctea de origen animal"
+  },
+  {
+    "id": "dairy.cream",
+    "triggers": ["dairy", "lactose", "vegan"],
+    "aliases": ["crema", "crema de leche", "crema dulce", "crema acida", "cream", "sour cream", "heavy cream", "whipping cream"],
+    "severity_by_trigger": { "dairy": "danger", "lactose": "danger", "vegan": "caution" },
+    "reason": "Grasa concentrada de leche"
+  },
+  {
+    "id": "dairy.cheese",
+    "triggers": ["dairy", "lactose", "vegan"],
+    "aliases": ["queso", "solidos de queso", "queso en polvo", "cheese", "parmesano", "cheddar", "mozzarella", "parmesan", "swiss cheese"],
+    "severity_by_trigger": { "dairy": "danger", "lactose": "danger", "vegan": "caution" },
+    "reason": "Producto fermentado lácteo"
+  },
+  {
+    "id": "dairy.yogurt",
+    "triggers": ["dairy", "lactose", "vegan"],
+    "aliases": ["yogurt", "yogur", "solidos de yogurt", "yoghurt", "greek yogurt"],
+    "severity_by_trigger": { "dairy": "danger", "lactose": "danger", "vegan": "caution" },
+    "reason": "Derivado lácteo fermentado"
+  },
+  {
+    "id": "dairy.buttermilk",
+    "triggers": ["dairy", "lactose", "vegan"],
+    "aliases": ["suero de mantequilla", "buttermilk"],
+    "severity_by_trigger": { "dairy": "danger", "lactose": "danger", "vegan": "caution" },
+    "reason": "Subproducto lácteo"
+  },
+  {
+    "id": "gluten.wheat",
+    "triggers": ["gluten", "celiac"],
+    "aliases": ["trigo", "wheat", "trigo integral", "whole wheat"],
+    "severity_by_trigger": { "gluten": "danger", "celiac": "danger" },
+    "reason": "Cereal con alto contenido de gluten"
+  },
+  {
+    "id": "gluten.flour",
+    "triggers": ["gluten", "celiac"],
+    "aliases": ["harina de trigo", "harina enriquecida", "harina fortificada", "wheat flour", "flour"],
+    "severity_by_trigger": { "gluten": "danger", "celiac": "danger" },
+    "reason": "Harina derivada de trigo con gluten"
+  },
+  {
+    "id": "gluten.barley",
+    "triggers": ["gluten", "celiac"],
+    "aliases": ["cebada", "barley", "extracto de cebada"],
+    "severity_by_trigger": { "gluten": "danger", "celiac": "danger" },
+    "reason": "Cereal que contiene gluten"
+  },
+  {
+    "id": "gluten.rye",
+    "triggers": ["gluten", "celiac"],
+    "aliases": ["centeno", "rye", "harina de centeno"],
+    "severity_by_trigger": { "gluten": "danger", "celiac": "danger" },
+    "reason": "Grano cereal que contiene gluten"
+  },
+  {
+    "id": "gluten.oats",
+    "triggers": ["gluten", "celiac"],
+    "aliases": ["avena", "hojuelas de avena", "harina de avena", "oats", "oatmeal"],
+    "severity_by_trigger": { "gluten": "danger", "celiac": "danger" },
+    "reason": "Avena propensa a contaminación cruzada con gluten"
+  },
+  {
+    "id": "gluten.malt",
+    "triggers": ["gluten", "celiac"],
+    "aliases": ["malta", "extracto de malta", "jarabe de malta", "malt", "malt extract"],
+    "severity_by_trigger": { "gluten": "danger", "celiac": "danger" },
+    "reason": "Derivado de la germinación de cereales con gluten"
+  },
+  {
+    "id": "gluten.wheat_starch",
+    "triggers": ["gluten", "celiac"],
+    "aliases": ["almidon de trigo", "almidon modificado de trigo", "wheat starch"],
+    "severity_by_trigger": { "gluten": "danger", "celiac": "danger" },
+    "reason": "Almidón derivado de trigo"
+  },
+  {
+    "id": "gluten.spelt",
+    "triggers": ["gluten", "celiac"],
+    "aliases": ["espelta", "spelt"],
+    "severity_by_trigger": { "gluten": "danger", "celiac": "danger" },
+    "reason": "Variedad antigua de trigo con gluten"
+  },
+  {
+    "id": "gluten.semolina",
+    "triggers": ["gluten", "celiac"],
+    "aliases": ["semola", "semola de trigo", "semolina", "durum"],
+    "severity_by_trigger": { "gluten": "danger", "celiac": "danger" },
+    "reason": "Harina gruesa de trigo duro con gluten"
+  },
+  {
+    "id": "gluten.kamut",
+    "triggers": ["gluten", "celiac"],
+    "aliases": ["kamut", "trigo khorasan"],
+    "severity_by_trigger": { "gluten": "danger", "celiac": "danger" },
+    "reason": "Subespecie de trigo rica en gluten"
+  },
+  {
+    "id": "peanut.peanut",
+    "triggers": ["peanut"],
+    "aliases": ["cacahuate", "cacahuates", "mani", "manies", "peanut", "peanuts"],
+    "severity_by_trigger": { "peanut": "danger" },
+    "reason": "Leguminosa alergénica de alto riesgo"
+  },
+  {
+    "id": "peanut.oil",
+    "triggers": ["peanut"],
+    "aliases": ["aceite de cacahuate", "aceite de mani", "peanut oil", "arachis oil"],
+    "severity_by_trigger": { "peanut": "danger" },
+    "reason": "Aceite prensado de cacahuate"
+  },
+  {
+    "id": "peanut.butter",
+    "triggers": ["peanut"],
+    "aliases": ["crema de cacahuate", "mantequilla de mani", "crema de mani", "peanut butter"],
+    "severity_by_trigger": { "peanut": "danger" },
+    "reason": "Pasta densa de cacahuate"
+  },
+  {
+    "id": "tree_nut.walnut",
+    "triggers": ["tree_nut"],
+    "aliases": ["nuez", "nueces", "walnut", "walnuts", "nuez de castilla"],
+    "severity_by_trigger": { "tree_nut": "danger" },
+    "reason": "Fruto seco alergénico"
+  },
+  {
+    "id": "tree_nut.almond",
+    "triggers": ["tree_nut"],
+    "aliases": ["almendra", "almendras", "almond", "almonds", "harina de almendra"],
+    "severity_by_trigger": { "tree_nut": "danger" },
+    "reason": "Fruto seco alergénico común"
+  },
+  {
+    "id": "tree_nut.hazelnut",
+    "triggers": ["tree_nut"],
+    "aliases": ["avellana", "avellanas", "hazelnut", "hazelnuts"],
+    "severity_by_trigger": { "tree_nut": "danger" },
+    "reason": "Fruto seco con proteínas alergénicas"
+  },
+  {
+    "id": "tree_nut.cashew",
+    "triggers": ["tree_nut"],
+    "aliases": ["anacardo", "anacardos", "maranon", "cashew", "cashews", "nuez de la india"],
+    "severity_by_trigger": { "tree_nut": "danger" },
+    "reason": "Fruto seco alergénico potente"
+  },
+  {
+    "id": "tree_nut.pecan",
+    "triggers": ["tree_nut"],
+    "aliases": ["nuez pecana", "pecana", "pecanas", "pecan", "pecans"],
+    "severity_by_trigger": { "tree_nut": "danger" },
+    "reason": "Fruto seco de la familia juglandácea"
+  },
+  {
+    "id": "tree_nut.pistachio",
+    "triggers": ["tree_nut"],
+    "aliases": ["pistache", "pistaches", "pistacho", "pistachos", "pistachio", "pistachios"],
+    "severity_by_trigger": { "tree_nut": "danger" },
+    "reason": "Fruto seco alergénico"
+  },
+  {
+    "id": "tree_nut.macadamia",
+    "triggers": ["tree_nut"],
+    "aliases": ["macadamia", "nuez de macadamia", "macadamia nut"],
+    "severity_by_trigger": { "tree_nut": "danger" },
+    "reason": "Fruto seco de alta alergenicidad"
+  },
+  {
+    "id": "egg.egg",
+    "triggers": ["egg", "vegan"],
+    "aliases": ["huevo", "huevos", "huevo entero", "egg", "eggs", "whole egg"],
+    "severity_by_trigger": { "egg": "danger", "vegan": "caution" },
+    "reason": "Alérgeno común de origen avícola"
+  },
+  {
+    "id": "egg.white",
+    "triggers": ["egg", "vegan"],
+    "aliases": ["clara de huevo", "claras de huevo", "egg white"],
+    "severity_by_trigger": { "egg": "danger", "vegan": "caution" },
+    "reason": "Contiene proteínas alergénicas como ovoalbúmina"
+  },
+  {
+    "id": "egg.yolk",
+    "triggers": ["egg", "vegan"],
+    "aliases": ["yema de huevo", "yemas", "egg yolk"],
+    "severity_by_trigger": { "egg": "danger", "vegan": "caution" },
+    "reason": "Fracción lipídica y proteica del huevo"
+  },
+  {
+    "id": "egg.albumin",
+    "triggers": ["egg", "vegan"],
+    "aliases": ["albumina", "ovoalbumina", "albumin", "ovalbumin"],
+    "severity_by_trigger": { "egg": "danger", "vegan": "caution" },
+    "reason": "Proteína aislada de huevo"
+  },
+  {
+    "id": "egg.lecithin",
+    "triggers": ["egg", "vegan"],
+    "aliases": ["lecitina de huevo", "egg lecithin"],
+    "severity_by_trigger": { "egg": "danger", "vegan": "caution" },
+    "reason": "Emulsionante derivado de huevo"
+  },
+  {
+    "id": "egg.lysozyme",
+    "triggers": ["egg", "vegan"],
+    "aliases": ["lisozima", "lysozyme", "e1105"],
+    "severity_by_trigger": { "egg": "danger", "vegan": "caution" },
+    "reason": "Enzima conservante extraída de clara de huevo"
+  },
+  {
+    "id": "soy.soy",
+    "triggers": ["soy"],
+    "aliases": ["soya", "soja", "frijol de soya", "soy", "soybean", "edamame"],
+    "severity_by_trigger": { "soy": "danger" },
+    "reason": "Leguminosa alergénica mayoritaria"
+  },
+  {
+    "id": "soy.lecithin",
+    "triggers": ["soy"],
+    "aliases": ["lecitina de soya", "lecitina de soja", "soy lecithin"],
+    "severity_by_trigger": { "soy": "danger" },
+    "reason": "Emulsionante derivado de soya"
+  },
+  {
+    "id": "soy.protein",
+    "triggers": ["soy"],
+    "aliases": ["proteina de soya", "proteina aislada de soya", "proteina texturizada de soya", "soy protein", "soy protein isolate"],
+    "severity_by_trigger": { "soy": "danger" },
+    "reason": "Concentrado proteico de soya"
+  },
+  {
+    "id": "soy.tofu",
+    "triggers": ["soy"],
+    "aliases": ["tofu", "harina de soya", "leche de soya", "salsa de soya"],
+    "severity_by_trigger": { "soy": "danger" },
+    "reason": "Derivado alimentario directo de soya"
+  },
+  {
+    "id": "fish.fish",
+    "triggers": ["fish", "vegan", "vegetarian"],
+    "aliases": ["pescado", "carne de pescado", "fish"],
+    "severity_by_trigger": { "fish": "danger", "vegan": "caution", "vegetarian": "caution" },
+    "reason": "Proteína de pescado (parvalbúminas)"
+  },
+  {
+    "id": "fish.tuna",
+    "triggers": ["fish", "vegan", "vegetarian"],
+    "aliases": ["atun", "tuna"],
+    "severity_by_trigger": { "fish": "danger", "vegan": "caution", "vegetarian": "caution" },
+    "reason": "Pescado pelágico alergénico"
+  },
+  {
+    "id": "fish.salmon",
+    "triggers": ["fish", "vegan", "vegetarian"],
+    "aliases": ["salmon", "aceite de salmon"],
+    "severity_by_trigger": { "fish": "danger", "vegan": "caution", "vegetarian": "caution" },
+    "reason": "Pescado graso alergénico"
+  },
+  {
+    "id": "fish.cod",
+    "triggers": ["fish", "vegan", "vegetarian"],
+    "aliases": ["bacalao", "cod", "anchoveta", "anchoa", "anchoas", "sardina", "sardinas"],
+    "severity_by_trigger": { "fish": "danger", "vegan": "caution", "vegetarian": "caution" },
+    "reason": "Especies de pescado comunes en salsas y aderezos"
+  },
+  {
+    "id": "fish.oil",
+    "triggers": ["fish", "vegan", "vegetarian"],
+    "aliases": ["aceite de pescado", "fish oil", "omega 3 de pescado"],
+    "severity_by_trigger": { "fish": "danger", "vegan": "caution", "vegetarian": "caution" },
+    "reason": "Lípido de origen ictícola"
+  },
+  {
+    "id": "shellfish.shrimp",
+    "triggers": ["shellfish", "vegan", "vegetarian"],
+    "aliases": ["camaron", "camarones", "shrimp", "prawn", "prawns"],
+    "severity_by_trigger": { "shellfish": "danger", "vegan": "caution", "vegetarian": "caution" },
+    "reason": "Crustáceo con tropomiosina alergénica"
+  },
+  {
+    "id": "shellfish.crab",
+    "triggers": ["shellfish", "vegan", "vegetarian"],
+    "aliases": ["cangrejo", "jaiba", "crab", "surimi"],
+    "severity_by_trigger": { "shellfish": "danger", "vegan": "caution", "vegetarian": "caution" },
+    "reason": "Crustáceo altamente reactivo"
+  },
+  {
+    "id": "shellfish.lobster",
+    "triggers": ["shellfish", "vegan", "vegetarian"],
+    "aliases": ["langosta", "langostino", "lobster"],
+    "severity_by_trigger": { "shellfish": "danger", "vegan": "caution", "vegetarian": "caution" },
+    "reason": "Crustáceo marino"
+  },
+  {
+    "id": "shellfish.mollusk",
+    "triggers": ["shellfish", "vegan", "vegetarian"],
+    "aliases": ["almeja", "almejas", "mejillon", "mejillones", "ostra", "ostras", "calamar", "pulpo", "clam", "mussel", "oyster", "squid", "octopus"],
+    "severity_by_trigger": { "shellfish": "danger", "vegan": "caution", "vegetarian": "caution" },
+    "reason": "Molusco marino con alergenicidad cruzada"
+  },
+  {
+    "id": "sesame.sesame",
+    "triggers": ["sesame"],
+    "aliases": ["ajonjoli", "sesamo", "sesame", "semillas de ajonjoli", "semillas de sesamo"],
+    "severity_by_trigger": { "sesame": "danger" },
+    "reason": "Semilla con proteínas alergénicas intensas"
+  },
+  {
+    "id": "sesame.tahini",
+    "triggers": ["sesame"],
+    "aliases": ["tahini", "tahina", "pasta de ajonjoli", "aceite de ajonjoli", "aceite de sesamo", "sesame oil"],
+    "severity_by_trigger": { "sesame": "danger" },
+    "reason": "Pasta concentrada de ajonjolí"
+  },
+  {
+    "id": "vegan.gelatin",
+    "triggers": ["vegan", "vegetarian"],
+    "aliases": ["gelatina", "grenetina", "gelatin", "gelatine"],
+    "severity_by_trigger": { "vegan": "caution", "vegetarian": "caution" },
+    "reason": "Proteína de colágeno extraída de cartílago y piel animal"
+  },
+  {
+    "id": "vegan.honey",
+    "triggers": ["vegan"],
+    "aliases": ["miel", "miel de abeja", "honey", "cera de abeja", "beeswax"],
+    "severity_by_trigger": { "vegan": "caution" },
+    "reason": "Producto elaborado por abejas (origen animal)"
+  },
+  {
+    "id": "vegan.carmine",
+    "triggers": ["vegan", "vegetarian"],
+    "aliases": ["carmin", "cochinilla", "acido carminico", "e120", "carmine", "cochineal"],
+    "severity_by_trigger": { "vegan": "caution", "vegetarian": "caution" },
+    "reason": "Colorante rojo extraído del insecto cochinilla"
+  },
+  {
+    "id": "vegan.lard",
+    "triggers": ["vegan", "vegetarian"],
+    "aliases": ["manteca de cerdo", "grasa animal", "sebo", "lard", "tallow", "animal fat"],
+    "severity_by_trigger": { "vegan": "caution", "vegetarian": "caution" },
+    "reason": "Grasa pura extraída de animales"
+  },
+  {
+    "id": "hypertensive.salt",
+    "triggers": ["hypertensive"],
+    "aliases": ["sal", "sal yodada", "sal marina", "salt", "sea salt"],
+    "severity_by_trigger": { "hypertensive": "caution" },
+    "reason": "Cloruro de sodio directo (eleva la presión arterial)"
+  },
+  {
+    "id": "hypertensive.sodium",
+    "triggers": ["hypertensive"],
+    "aliases": ["sodio", "sodium"],
+    "severity_by_trigger": { "hypertensive": "caution" },
+    "reason": "Elemento mineral que contribuye a la hipertensión"
+  },
+  {
+    "id": "hypertensive.msg",
+    "triggers": ["hypertensive"],
+    "aliases": ["glutamato monosodico", "glutamato de sodio", "msg", "monosodium glutamate", "gma", "e621"],
+    "severity_by_trigger": { "hypertensive": "caution" },
+    "reason": "Potenciador de sabor con alto aporte de sodio oculto"
+  },
+  {
+    "id": "hypertensive.benzoate",
+    "triggers": ["hypertensive"],
+    "aliases": ["benzoato de sodio", "sodium benzoate", "e211"],
+    "severity_by_trigger": { "hypertensive": "caution" },
+    "reason": "Conservante que aporta sodio libre al organismo"
+  },
+  {
+    "id": "hypertensive.nitrite",
+    "triggers": ["hypertensive"],
+    "aliases": ["nitrito de sodio", "nitrato de sodio", "sodium nitrite", "sodium nitrate", "e250"],
+    "severity_by_trigger": { "hypertensive": "caution" },
+    "reason": "Conservante curador de carnes con sodio"
+  },
+  {
+    "id": "hypertensive.bicarbonate",
+    "triggers": ["hypertensive"],
+    "aliases": ["bicarbonato de sodio", "sodium bicarbonate", "e500"],
+    "severity_by_trigger": { "hypertensive": "caution" },
+    "reason": "Agente leudante con contenido considerable de sodio"
+  },
+  {
+    "id": "hypertensive.bouillon",
+    "triggers": ["hypertensive"],
+    "aliases": ["caldo de pollo concentrado", "caldo de res concentrado", "cubo de caldo", "bouillon", "consome"],
+    "severity_by_trigger": { "hypertensive": "caution" },
+    "reason": "Concentrado ultra-alto en sal y sodio"
+  },
+  {
+    "id": "diabetic.hfcs",
+    "triggers": ["diabetic"],
+    "aliases": ["jarabe de maiz de alta fructosa", "alta fructosa", "high fructose corn syrup", "hfcs", "jmaf"],
+    "severity_by_trigger": { "diabetic": "caution" },
+    "reason": "Endulzante de alta absorción que dispara glucosa en sangre"
+  },
+  {
+    "id": "diabetic.sugar",
+    "triggers": ["diabetic"],
+    "aliases": ["azucar", "azucar de cana", "sacarosa", "sugar", "cane sugar", "sucrose"],
+    "severity_by_trigger": { "diabetic": "caution" },
+    "reason": "Carbohidrato simple de rápido índice glucémico"
+  },
+  {
+    "id": "diabetic.dextrose",
+    "triggers": ["diabetic"],
+    "aliases": ["dextrosa", "dextrose", "glucosa", "jarabe de glucosa", "glucose syrup"],
+    "severity_by_trigger": { "diabetic": "caution" },
+    "reason": "Glucosa pura de absorción ultra veloz"
+  },
+  {
+    "id": "diabetic.maltodextrin",
+    "triggers": ["diabetic"],
+    "aliases": ["maltodextrina", "maltodextrin"],
+    "severity_by_trigger": { "diabetic": "caution" },
+    "reason": "Polisacárido con índice glucémico superior al azúcar común"
+  }
+]
